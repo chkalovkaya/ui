@@ -1,0 +1,110 @@
+
+.button {
+    height: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background $transition-speed-slow, color $transition-speed-slow;
+    cursor: pointer;
+    padding: 0 40px;
+
+    @media (max-width: $media-xs-max) {
+        width: 100%;
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &.m-icon {
+        padding: 20px;
+
+        & .button__icon {
+            margin-right: 0;
+        }
+    }
+
+    &.m-blue-dark {
+        background: $bg-blue-dark;
+        color: $text-white;
+        &:hover {
+            background: $blue-dark-hover;
+        }
+        &:active {
+            background: $blue-dark-pressed;
+        }
+    }
+
+    &.m-grey {
+        background: $el-bg-grey;
+        color: $text-black;
+        &:hover {
+            background: $el-bg-hover;
+        }
+        &:active {
+            background: $el-bg-pressed;
+        }
+    }
+
+    &.m-white {
+        background: $white;
+        color: $text-black;
+        border: 1px solid $border-grey;
+        &:hover {
+            background: $black;
+            color: $text-white;
+        }
+        &:active {
+            background: $black;
+            color: $text-white;
+        }
+    }
+
+    &.m-black {
+        background: $black;
+        color: $text-white;
+        border: 1px solid $border-white;
+        &:hover {
+            background: $white;
+            color: $text-black;
+        }
+        &:active {
+            background: $white;
+            color: $text-black;
+        }
+    }
+
+    &.m-blue {
+        background: $blue;
+        color: $text-white;
+        &:hover {
+            background: $blue-hover;
+        }
+        &:active {
+            background: $blue-pressed;
+        }
+    }
+
+    &.m-yellow {
+        background: $yellow;
+        color: $text-black;
+        &:hover {
+            background: $yellow-hover;
+        }
+        &:active {
+            background: $yellow-pressed;
+        }
+    }
+
+    &.m-disabled {
+        background: $el-bg-disabled;
+        color: $text-disabled;
+        pointer-events: none;
+    }
+}

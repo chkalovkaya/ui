@@ -1,0 +1,71 @@
+
+@include font-face('Circe_Regular');
+@include font-face('Circe_Bold');
+
+body {
+    color: $text-black;
+    font-family: Circe_Regular, sans-serif;
+    font-size: 16px;
+}
+
+.h1 {
+    font-family: Circe_Bold;
+    font-size: 40px;
+    line-height: 45px;
+    @media (max-width: $media-xs-max) {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+.h2 {
+    font-family: Circe_Bold;
+    font-size: 32px;
+    line-height: 38px;
+    @media (max-width: $media-xs-max) {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+.h3 {
+    font-family: Circe_Bold;
+    font-size: 22px;
+    line-height: 30px;
+    @media (max-width: $media-xs-max) {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+.h4 {
+    font-family: Circe_Bold;
+    font-size: 18px;
+    line-height: 26px;
+    @media (max-width: $media-xs-max) {
+        font-size: 19px;
+        line-height: 25px;
+    }
+}
+
+.text {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.text-bold {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Circe_Bold;
+}
+
+.text-article {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.text-description {
+    color: $text-grey;
+    font-size: 14px;
+    line-height: 20px;
+}

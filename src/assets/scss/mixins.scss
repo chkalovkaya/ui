@@ -1,0 +1,14 @@
+@mixin font-face($font-name, $font-weight: normal, $font-style: normal) {
+    @font-face {
+        font-family: $font-name;
+        font-weight: $font-weight;
+        font-style: $font-style;
+        src:
+            url("../fonts/#{$font-name}.woff2") format("woff2"),
+            url("../fonts/#{$font-name}.woff") format("woff")
+    }
+}
+
+@mixin transition($transition-prop, $transition-speed: $transition-speed-normal, $transition-effect: linear) {
+    transition: $transition-prop $transition-speed $transition-effect
+}

@@ -1,0 +1,37 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve --env development",
+    "build": "webpack --env production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chkalovkaya/ui.git"
+  },
+  "author": "chkalovkaya",
+  "homepage": "https://github.com/chkalovkaya/ui#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@vue/compiler-sfc": "^3.2.20",
+    "app-root-path": "^3.0.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "sass": "^1.38.1",
+    "sass-loader": "^12.1.0",
+    "sass-resources-loader": "^2.2.4",
+    "svg-sprite-loader": "^6.0.9",
+    "vue-loader": "^16.0.0",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "vue": "^3.2.20"
+  }
+}
